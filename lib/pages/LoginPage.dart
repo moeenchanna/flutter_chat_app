@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_firebase_chat/helper/UIHelper.dart';
 import 'package:flutter_firebase_chat/models/UserModel.dart';
 import 'package:flutter_firebase_chat/pages/HomePage.dart';
+import 'package:flutter_firebase_chat/pages/NotificationsPage.dart';
 import 'package:flutter_firebase_chat/pages/SignUpPage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -112,6 +113,23 @@ class _LoginPageState extends State<LoginPage> {
               color: Theme.of(context).colorScheme.secondary,
               child: const Text("Log In"),
             ),
+
+                const SizedBox(height: 10,),
+
+                CupertinoButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) {
+                            return const NotificationsPage();
+                          }
+                      ),
+                    );
+                  },
+                  color: Theme.of(context).colorScheme.secondary,
+                  child: const Text("Notification"),
+                ),
 
             ],
             ),

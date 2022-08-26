@@ -6,7 +6,6 @@ import 'package:flutter_firebase_chat/pages/HomePage.dart';
 import 'package:flutter_firebase_chat/pages/LoginPage.dart';
 import 'package:flutter_firebase_chat/pages/NotificationsPage.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-
 import 'helper/FirebaseHelper.dart';
 import 'models/UserModel.dart';
 import 'package:uuid/uuid.dart';
